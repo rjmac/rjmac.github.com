@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.rojoma.json.matcher</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../../package.html">com</a>.<a name="com.rojoma" class="extype" href="../../package.html">rojoma</a>.<a name="com.rojoma.json" class="extype" href="../package.html">json</a></p>
+        <h1>matcher</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">matcher</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.rojoma.json.matcher.AllOf" data-isabs="false">
+      <a id="AllOf:AllOf"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AllOf.html"><span class="name">AllOf</span></a><span class="params">(<span name="subPatterns">subPatterns: OptPattern*</span>)</span><span class="result"> extends Pattern with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which matches only if
+all the sub-patterns also match.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.CodecMatcher" data-isabs="false">
+      <a id="CodecMatcher:CodecMatcher[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CodecMatcher.html"><span class="name">CodecMatcher</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Simple class to turn a <a name="com.rojoma.json.codec.JsonCodec" class="extype" href="../codec/JsonCodec.html">JsonCodec</a> into something
+that can be used for pattern-matching.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.FLiteral" data-isabs="false">
+      <a id="FLiteral:FLiteral"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FLiteral.html"><span class="name">FLiteral</span></a><span class="params">(<span name="recognizer">recognizer: (JValue) ⇒ Boolean</span>)</span><span class="result"> extends Pattern with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which matches a <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>
+if a predicate on that JValue is true.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.FirstOf" data-isabs="false">
+      <a id="FirstOf:FirstOf"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FirstOf.html"><span class="name">FirstOf</span></a><span class="params">(<span name="subPatterns">subPatterns: Pattern*</span>)</span><span class="result"> extends Pattern with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which matches the first
+sub-pattern to succeed.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.JsonGenerationException" data-isabs="false">
+      <a id="JsonGenerationException:JsonGenerationException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonGenerationException.html"><span class="name">JsonGenerationException</span></a><span class="result"> extends RuntimeException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.matcher.Literal" data-isabs="false">
+      <a id="Literal:Literal"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Literal.html"><span class="name">Literal</span></a><span class="params">(<span name="literal">literal: JValue</span>)</span><span class="result"> extends Pattern with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which matches a <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>
+exactly.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.OptPattern" data-isabs="true">
+      <a id="OptPattern:OptPattern"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="OptPattern.html"><span class="name">OptPattern</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Either a com.rojoma.json.Pattern or a com.rojoma.json.POption.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.PArray" data-isabs="false">
+      <a id="PArray:PArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PArray.html"><span class="name">PArray</span></a><span class="params">(<span name="subPatterns">subPatterns: Pattern*</span>)</span><span class="result"> extends Pattern with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which matches if the value is
+a <a name="com.rojoma.json.ast.JArray" class="extype" href="../ast/JArray.html">JArray</a> which contains at least as many elements
+as sub-patterns contained by this object and those elements match the
+sub-patterns in the order given.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.PObject" data-isabs="false">
+      <a id="PObject:PObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PObject.html"><span class="name">PObject</span></a><span class="params">(<span name="subPatterns">subPatterns: (String, OptPattern)*</span>)</span><span class="result"> extends Pattern with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which matches if the value is
+a <a name="com.rojoma.json.ast.JObject" class="extype" href="../ast/JObject.html">JObject</a> which contains at least the fields
+specified in this <code>Pattern</code>.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.POption" data-isabs="false">
+      <a id="POption:POption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="POption.html"><span class="name">POption</span></a><span class="params">(<span name="subPattern">subPattern: Pattern</span>)</span><span class="result"> extends OptPattern with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A wrapper for a <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which allows
+fields to be absent when using a <a name="com.rojoma.json.matcher.PObject" class="extype" href="PObject.html">PObject</a>.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.Pattern" data-isabs="true">
+      <a id="Pattern:Pattern"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Pattern.html"><span class="name">Pattern</span></a><span class="result"> extends OptPattern</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An object that can be used to either match and extract data from,
+or generate, <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>s.</p>
+    </li><li visbl="pub" name="com.rojoma.json.matcher.Variable" data-isabs="true">
+      <a id="Variable:Variable[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Variable.html"><span class="name">Variable</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends Pattern with PartialFunction[Results, T]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A <a name="com.rojoma.json.matcher.Pattern" class="extype" href="Pattern.html">Pattern</a> which matches any <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>
+which can be decoded into an object of type <code>T</code>.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.rojoma.json.matcher.CodecMatcher" data-isabs="false">
+      <a id="CodecMatcher:CodecMatcher"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CodecMatcher$.html"><span class="name">CodecMatcher</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.matcher.OptPattern" data-isabs="false">
+      <a id="OptPattern:OptPattern"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="OptPattern$.html"><span class="name">OptPattern</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.matcher.Pattern" data-isabs="false">
+      <a id="Pattern:Pattern"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Pattern$.html"><span class="name">Pattern</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.matcher.Variable" data-isabs="false">
+      <a id="Variable:Variable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Variable$.html"><span class="name">Variable</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

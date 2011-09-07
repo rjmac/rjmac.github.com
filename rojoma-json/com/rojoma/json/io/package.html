@@ -1,0 +1,788 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.rojoma.json.io</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a name="com" class="extype" href="../../../package.html">com</a>.<a name="com.rojoma" class="extype" href="../../package.html">rojoma</a>.<a name="com.rojoma.json" class="extype" href="../package.html">json</a></p>
+        <h1>io</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">io</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.rojoma.json.io.BlockJsonTokenIterator" data-isabs="false">
+      <a id="BlockJsonTokenIterator:BlockJsonTokenIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BlockJsonTokenIterator.html"><span class="name">BlockJsonTokenIterator</span></a><span class="result"> extends BufferedIterator[JsonToken]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Convert a character-stream into a token-stream.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.CompactJsonWriter" data-isabs="false">
+      <a id="CompactJsonWriter:CompactJsonWriter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="CompactJsonWriter.html"><span class="name">CompactJsonWriter</span></a><span class="result"> extends JsonWriter</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An object that will write <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>s in a non-human-friendly
+&quot;compact&quot; format with no spaces or newlines.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.EndOfArrayEvent" data-isabs="false">
+      <a id="EndOfArrayEvent:EndOfArrayEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EndOfArrayEvent.html"><span class="name">EndOfArrayEvent</span></a><span class="params">()</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.EndOfObjectEvent" data-isabs="false">
+      <a id="EndOfObjectEvent:EndOfObjectEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EndOfObjectEvent.html"><span class="name">EndOfObjectEvent</span></a><span class="params">()</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.FieldEvent" data-isabs="false">
+      <a id="FieldEvent:FieldEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FieldEvent.html"><span class="name">FieldEvent</span></a><span class="params">(<span name="name">name: String</span>)</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.IdentifierEvent" data-isabs="false">
+      <a id="IdentifierEvent:IdentifierEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="IdentifierEvent.html"><span class="name">IdentifierEvent</span></a><span class="params">(<span name="text">text: String</span>)</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JValueGenerator" data-isabs="true">
+      <a id="JValueGenerator:JValueGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JValueGenerator.html"><span class="name">JValueGenerator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonBadParse" data-isabs="false">
+      <a id="JsonBadParse:JsonBadParse"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonBadParse.html"><span class="name">JsonBadParse</span></a><span class="result"> extends JsonReaderException with JsonReadException</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This exception should never be thrown if using the standard
+<code>JsonEventIterator</code>.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonEOF" data-isabs="true">
+      <a id="JsonEOF:JsonEOF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonEOF.html"><span class="name">JsonEOF</span></a><span class="result"> extends JsonReaderException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonEvent" data-isabs="true">
+      <a id="JsonEvent:JsonEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonEvent.html"><span class="name">JsonEvent</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonEventGenerator" data-isabs="true">
+      <a id="JsonEventGenerator:JsonEventGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonEventGenerator.html"><span class="name">JsonEventGenerator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonEventIterator" data-isabs="false">
+      <a id="JsonEventIterator:JsonEventIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonEventIterator.html"><span class="name">JsonEventIterator</span></a><span class="result"> extends BufferedIterator[JsonEvent]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Turns a raw token-stream into an event stream, checking for JSON
+well-formedness.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonLexException" data-isabs="true">
+      <a id="JsonLexException:JsonLexException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonLexException.html"><span class="name">JsonLexException</span></a><span class="result"> extends JsonReaderException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonLexerEOF" data-isabs="false">
+      <a id="JsonLexerEOF:JsonLexerEOF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonLexerEOF.html"><span class="name">JsonLexerEOF</span></a><span class="result"> extends JsonEOF with JsonLexException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonNumberOutOfRange" data-isabs="false">
+      <a id="JsonNumberOutOfRange:JsonNumberOutOfRange"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonNumberOutOfRange.html"><span class="name">JsonNumberOutOfRange</span></a><span class="result"> extends JsonReaderException with JsonLexException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonParseException" data-isabs="true">
+      <a id="JsonParseException:JsonParseException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonParseException.html"><span class="name">JsonParseException</span></a><span class="result"> extends JsonReaderException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonParserEOF" data-isabs="false">
+      <a id="JsonParserEOF:JsonParserEOF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonParserEOF.html"><span class="name">JsonParserEOF</span></a><span class="result"> extends JsonEOF with JsonParseException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonReadException" data-isabs="true">
+      <a id="JsonReadException:JsonReadException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonReadException.html"><span class="name">JsonReadException</span></a><span class="result"> extends JsonReaderException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonReader" data-isabs="false">
+      <a id="JsonReader:JsonReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonReader.html"><span class="name">JsonReader</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Parses a token-stream into a <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonReaderException" data-isabs="true">
+      <a id="JsonReaderException:JsonReaderException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonReaderException.html"><span class="name">JsonReaderException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonToken" data-isabs="true">
+      <a id="JsonToken:JsonToken"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonToken.html"><span class="name">JsonToken</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonTokenGenerator" data-isabs="true">
+      <a id="JsonTokenGenerator:JsonTokenGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonTokenGenerator.html"><span class="name">JsonTokenGenerator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonTokenIterator" data-isabs="false">
+      <a id="JsonTokenIterator:JsonTokenIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonTokenIterator.html"><span class="name">JsonTokenIterator</span></a><span class="result"> extends BufferedIterator[JsonToken]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Convert a character-stream into a token-stream.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonUnexpectedCharacter" data-isabs="false">
+      <a id="JsonUnexpectedCharacter:JsonUnexpectedCharacter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonUnexpectedCharacter.html"><span class="name">JsonUnexpectedCharacter</span></a><span class="result"> extends JsonReaderException with JsonLexException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonUnexpectedToken" data-isabs="false">
+      <a id="JsonUnexpectedToken:JsonUnexpectedToken"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonUnexpectedToken.html"><span class="name">JsonUnexpectedToken</span></a><span class="result"> extends JsonReaderException with JsonParseException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonUnknownIdentifier" data-isabs="false">
+      <a id="JsonUnknownIdentifier:JsonUnknownIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonUnknownIdentifier.html"><span class="name">JsonUnknownIdentifier</span></a><span class="result"> extends JsonReaderException with JsonParseException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonWriter" data-isabs="true">
+      <a id="JsonWriter:JsonWriter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonWriter.html"><span class="name">JsonWriter</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An object that can serialize <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>s.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonXException" data-isabs="true">
+      <a id="JsonXException:JsonXException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonXException.html"><span class="name">JsonXException</span></a><span class="result"> extends Exception</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.MalformedEventStreamException" data-isabs="false">
+      <a id="MalformedEventStreamException:MalformedEventStreamException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MalformedEventStreamException.html"><span class="name">MalformedEventStreamException</span></a><span class="params">(<span name="message">message: String</span>)</span><span class="result"> extends RuntimeException with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.MaximumNestingDepthExceeded" data-isabs="false">
+      <a id="MaximumNestingDepthExceeded:MaximumNestingDepthExceeded"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MaximumNestingDepthExceeded.html"><span class="name">MaximumNestingDepthExceeded</span></a><span class="params">()</span><span class="result"> extends JsonXException with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.NoSuchTokenException" data-isabs="false">
+      <a id="NoSuchTokenException:NoSuchTokenException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NoSuchTokenException.html"><span class="name">NoSuchTokenException</span></a><span class="result"> extends NoSuchElementException</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.NumberEvent" data-isabs="false">
+      <a id="NumberEvent:NumberEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NumberEvent.html"><span class="name">NumberEvent</span></a><span class="params">(<span name="number">number: BigDecimal</span>)</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.Position" data-isabs="false">
+      <a id="Position:Position"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Position.html"><span class="name">Position</span></a><span class="result"> extends SuperClass</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.PrettyJsonWriter" data-isabs="false">
+      <a id="PrettyJsonWriter:PrettyJsonWriter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PrettyJsonWriter.html"><span class="name">PrettyJsonWriter</span></a><span class="result"> extends JsonWriter</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An object that will write <a name="com.rojoma.json.ast.JValue" class="extype" href="../ast/JValue.html">JValue</a>s in a human-friendly
+indented format with no spaces or newlines.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.SimpleJsonToken" data-isabs="true">
+      <a id="SimpleJsonToken:SimpleJsonToken"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SimpleJsonToken.html"><span class="name">SimpleJsonToken</span></a><span class="result"> extends JsonToken</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.StartOfArrayEvent" data-isabs="false">
+      <a id="StartOfArrayEvent:StartOfArrayEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StartOfArrayEvent.html"><span class="name">StartOfArrayEvent</span></a><span class="params">()</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.StartOfObjectEvent" data-isabs="false">
+      <a id="StartOfObjectEvent:StartOfObjectEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StartOfObjectEvent.html"><span class="name">StartOfObjectEvent</span></a><span class="params">()</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.StringEvent" data-isabs="false">
+      <a id="StringEvent:StringEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StringEvent.html"><span class="name">StringEvent</span></a><span class="params">(<span name="string">string: String</span>)</span><span class="result"> extends JsonEvent with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.StringTooLongException" data-isabs="false">
+      <a id="StringTooLongException:StringTooLongException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StringTooLongException.html"><span class="name">StringTooLongException</span></a><span class="params">()</span><span class="result"> extends JsonXException with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenCloseBrace" data-isabs="false">
+      <a id="TokenCloseBrace:TokenCloseBrace"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenCloseBrace.html"><span class="name">TokenCloseBrace</span></a><span class="params">()</span><span class="result"> extends SimpleJsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenCloseBracket" data-isabs="false">
+      <a id="TokenCloseBracket:TokenCloseBracket"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenCloseBracket.html"><span class="name">TokenCloseBracket</span></a><span class="params">()</span><span class="result"> extends SimpleJsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenColon" data-isabs="false">
+      <a id="TokenColon:TokenColon"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenColon.html"><span class="name">TokenColon</span></a><span class="params">()</span><span class="result"> extends SimpleJsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenComma" data-isabs="false">
+      <a id="TokenComma:TokenComma"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenComma.html"><span class="name">TokenComma</span></a><span class="params">()</span><span class="result"> extends SimpleJsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenIdentifier" data-isabs="false">
+      <a id="TokenIdentifier:TokenIdentifier"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenIdentifier.html"><span class="name">TokenIdentifier</span></a><span class="params">(<span name="text">text: String</span>)</span><span class="result"> extends SimpleJsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenNumber" data-isabs="false">
+      <a id="TokenNumber:TokenNumber"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenNumber.html"><span class="name">TokenNumber</span></a><span class="params">(<span name="number">number: BigDecimal</span>)</span><span class="result"> extends JsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenOpenBrace" data-isabs="false">
+      <a id="TokenOpenBrace:TokenOpenBrace"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenOpenBrace.html"><span class="name">TokenOpenBrace</span></a><span class="params">()</span><span class="result"> extends SimpleJsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenOpenBracket" data-isabs="false">
+      <a id="TokenOpenBracket:TokenOpenBracket"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenOpenBracket.html"><span class="name">TokenOpenBracket</span></a><span class="params">()</span><span class="result"> extends SimpleJsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.TokenString" data-isabs="false">
+      <a id="TokenString:TokenString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TokenString.html"><span class="name">TokenString</span></a><span class="params">(<span name="text">text: String</span>)</span><span class="result"> extends JsonToken with Product with Serializable</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.rojoma.json.io.CompactJsonWriter" data-isabs="false">
+      <a id="CompactJsonWriter:CompactJsonWriter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CompactJsonWriter$.html"><span class="name">CompactJsonWriter</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.EventTokenIterator" data-isabs="false">
+      <a id="EventTokenIterator:EventTokenIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="EventTokenIterator$.html"><span class="name">EventTokenIterator</span></a><span class="result"> extends (Iterator[JsonEvent]) ⇒ Iterator[JsonToken]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A function which converts an <code>Iterator[JsonEvent]</code> into an <code>Iterator[JsonToken]</code>.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.JValueEventIterator" data-isabs="false">
+      <a id="JValueEventIterator:JValueEventIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JValueEventIterator$.html"><span class="name">JValueEventIterator</span></a><span class="result"> extends (JValue) ⇒ Iterator[JsonEvent]</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A function which converts a <code>JValue</code> into an <code>Iterator[JsonEvent]</code>.</p>
+    </li><li visbl="pub" name="com.rojoma.json.io.JValueGenerator" data-isabs="false">
+      <a id="JValueGenerator:JValueGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JValueGenerator$.html"><span class="name">JValueGenerator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonEventGenerator" data-isabs="false">
+      <a id="JsonEventGenerator:JsonEventGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonEventGenerator$.html"><span class="name">JsonEventGenerator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonEventIterator" data-isabs="false">
+      <a id="JsonEventIterator:JsonEventIterator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonEventIterator$.html"><span class="name">JsonEventIterator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonReader" data-isabs="false">
+      <a id="JsonReader:JsonReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonReader$.html"><span class="name">JsonReader</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonTokenGenerator" data-isabs="false">
+      <a id="JsonTokenGenerator:JsonTokenGenerator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonTokenGenerator$.html"><span class="name">JsonTokenGenerator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.JsonX" data-isabs="false">
+      <a id="JsonX:JsonX"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonX$.html"><span class="name">JsonX</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.Position" data-isabs="false">
+      <a id="Position:Position"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Position$.html"><span class="name">Position</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="com.rojoma.json.io.PrettyJsonWriter" data-isabs="false">
+      <a id="PrettyJsonWriter:PrettyJsonWriter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PrettyJsonWriter$.html"><span class="name">PrettyJsonWriter</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
